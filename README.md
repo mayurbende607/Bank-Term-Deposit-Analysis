@@ -139,19 +139,22 @@ Created a two-page interactive dashboard:
 
 *These findings describe historical associations in the dataset and do not establish causation.*
 
+
 ## 🤖 Machine Learning Results
 
-The models achieved the following accuracy scores in the notebook:
+Three classification models were developed to predict whether a customer would subscribe to a term deposit.
 
-| Model | Accuracy |
-|---|---:|
-| Logistic Regression | 91.07% |
-| Decision Tree | 91.50% |
-| Random Forest | 91.20% |
+| Model | Accuracy | Precision (Yes) | Recall (Yes) | F1-Score (Yes) |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 91.07% | 0.66 | 0.42 | 0.52 |
+| Decision Tree | 91.50% | 0.65 | 0.54 | 0.59 |
+| Random Forest | 91.20% | 0.66 | 0.49 | 0.56 |
 
-The Decision Tree achieved the highest accuracy among these three models in this evaluation.
+The Decision Tree achieved the highest accuracy (91.50%) and F1-score (0.59) among the three models in this evaluation.
 
-However, accuracy alone is insufficient because only about 11.27% of customers subscribed. Precision, recall, and F1-score for the `yes` class are also important when assessing how well a model identifies potential subscribers.
+However, the dataset is imbalanced, with only approximately 11.27% of customers subscribing to a term deposit. Therefore, accuracy alone does not fully represent model performance. Precision, recall, and F1-score for the `yes` class are also important for evaluating how effectively the models identify subscribers.
+
+
 
 ## 📈 Business Recommendations
 
